@@ -24,7 +24,7 @@ const OTP_Login = () => {
         try {
             setIsloading(true);
 
-            const response = await axiosApi.post("/api/send-mail", {
+            const response = await axiosApi.post("/send-mail", {
                 to: email,
                 subject: "Your OTP Code",
                 text: "Here is your OTP code",
@@ -184,3 +184,4 @@ const OTP_Login = () => {
 
 
 export default OTP_Login
+
