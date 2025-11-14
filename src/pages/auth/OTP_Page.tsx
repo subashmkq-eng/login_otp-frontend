@@ -33,7 +33,7 @@ const OTP_Page = () => {
 
             const token = localStorage.getItem("otp_token"); // << FIX
 
-            const res = await axiosApi.post("/api/verify-otp", {
+            const res = await axiosApi.post("/verify-otp", {
                 email,
                 otp,
                 token
@@ -222,3 +222,4 @@ const OTP_Page = () => {
 
 
 export default OTP_Page
+
