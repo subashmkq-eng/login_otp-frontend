@@ -64,7 +64,7 @@ const OTP_Login = () => {
                 console.log('Selected Gmail:', userEmail);
 
                 // Send OTP using your backend
-                const sendRes = await axiosApi.post("/api/send-mail", {
+                const sendRes = await axiosApi.post("send-mail", {
                     to: userEmail,
                     subject: 'Your OTP Code',
                     text: 'Here is your OTP code',
@@ -181,5 +181,6 @@ const OTP_Login = () => {
         </>
     )
 }
+
 
 export default OTP_Login
